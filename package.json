@@ -1,0 +1,18 @@
+{
+  "author": "Gordon McAllister <gordon@thesoftwaregreenhouse.co.uk>",
+  "name": "open-up",
+  "description": "opening public data that's not that public",
+  "version": "0.0.1",
+  "homepage": "openup.thesoftwaregreenhouse.co.uk",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TheSoftwareGreenhouse/open-up.git"
+  },
+  "engines": {
+    "node": ">=0.6.6"
+  },
+  "dependencies": {
+    "flatiron": "*"
+  },
+  "devDependencies": {}
+}
