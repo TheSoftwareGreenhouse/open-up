@@ -12,7 +12,9 @@
     "node": ">=0.6.6"
   },
   "dependencies": {
-    "flatiron": "*"
+    "flatiron": "*",
+    "coffee-script": "*",
+    "union": "*"
   },
   "devDependencies": {}
 }
