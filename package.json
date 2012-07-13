@@ -3,7 +3,7 @@
   "name": "open-up",
   "description": "opening public data that's not that public",
   "version": "0.0.1",
-  "homepage": "openup.thesoftwaregreenhouse.co.uk",
+  "homepage": "open-up.thesoftwaregreenhouse.co.uk",
   "repository": {
     "type": "git",
     "url": "git://github.com/TheSoftwareGreenhouse/open-up.git"
