@@ -8,3 +8,4 @@ app.router.get '/', ()->
   this.res.end 'open-up\n'
 
 app.start 9200
+
