@@ -21,6 +21,22 @@ app.router.get '/', ()->
   @res.end 'open-up\n'
 
 app.router.get '/datasets/snsDataZoneLookup', ()->
+  @res.writeHead 200, { 'Content-Type': 'text/plain' }
+  @res.end 'what is this dataset all about?\n'
+
+app.router.get '/datasets/snsDataZoneLookup/original', ()->
+  thisRequest = @req
+  ourResponse = @res
+  options = parseUrl 'http://www.scotland.gov.uk/Resource/Doc/933/0112765.txt'
+  options.headers = thisRequest.headers
+  req = http.request options, (theirResponse)->
+    ourResponse.writeHead theirResponse.statusCode, theirResponse.headers
+    theirResponse.pipe ourResponse
+
+  req.end()
+
+
+app.router.get '/datasets/snsDataZoneLookup/original.json', ()->
   thisRequest = @req
   ourResponse = @res
   options = parseUrl 'http://www.scotland.gov.uk/Resource/Doc/933/0112765.txt'
