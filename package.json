@@ -14,7 +14,8 @@
   "dependencies": {
     "flatiron": "*",
     "coffee-script": "*",
-    "union": "*"
+    "union": "*",
+    "csv": "*"
   },
   "devDependencies": {}
 }
